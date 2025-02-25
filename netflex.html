@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="netflexx.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fac54f0bd8.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="first_page ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <a class="navbar-brand" href="#"><img src="data:image/png;base64,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" class="navbar-image-prop-1" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Top Ratings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Subscription Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#FollowUs">Follow Us On</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="mt-5">
+            <h1 class="first_page_head_prop mb-3"> NETFLEX</h1>
+            <div class="details_container_prop">
+                <form class="form d-flex flex-column position-absolute justify-content-center">
+                    <p id="heading">Login</p>
+
+                    <div class="field">
+                        <span class="material-symbols-outlined">alternate_email</span>
+                        <input placeholder="Username" autocomplete="off" class="input-field" type="text">
+                    </div>
+
+                    <div class="field">
+                        <span class="material-symbols-outlined">lock_open</span>
+                        <input placeholder="password" type="password" class="input-field" />
+                    </div>
+
+                    <div class="btn d-flex flex-row justify-content-center">
+                        <button class="button1 ">
+                            &nbsp; &nbsp; &nbsp; &nbsp;Login &nbsp; &nbsp; &nbsp; &nbsp;
+                        </button>
+                        <button class="button2">Sign Up</button>
+                    </div>
+
+                    <button class="button3"> Forgot Password</button>
+
+
+                </form>
+            </div>
+
+        </div>
+
+        <footer >
+            <div class="footerContainer" id="FollowUs" >
+                <div class="socialIcons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+
+                <div class="footernav">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Our Team</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+        <div class="footerBottom">
+            <p> copyright &copy; 2022; designed by <span class="designer">Praneeth.G</span> </p>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
